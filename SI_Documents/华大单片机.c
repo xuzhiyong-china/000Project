@@ -2,7 +2,7 @@
  IAR的debugger选择STlink并且选择为SWD接口，降低SWD的下载速度，确保每次烧录都能通讯上。
 
  华大的例程有用IIC中断方式操作EEPROM
- 	
+ 使用外设的功能：主要是查看寄存器的功能与看官网的模块文件。	
 
 华大库手册：
 
@@ -58,5 +58,55 @@ XTH---PLL---SystemClk不分频---HCLK---不分频直接给PCLK：所以时钟都
 
 
 
+
+华大单片机：
+    参考“ example\sysctrl\sysctrl_clk_switch ” 设置系统的时钟
+    例程当中可以切换时钟并使用示波器查看系统时钟。
+    工程中自带精准的延时函数。
+    修改点：
+        App_SystemClkInit_XTH(SysctrlXthFreq4_8MHz);--选用XTH时钟范围,其他的删除   
+        App_SystemClkInit_PLL48M_byXTH();   ---输入时钟源选择为晶振口 --mark：//xzy20210406
+所以工程的起点是这个例程下的main函数。  
+    仿真查看变量：SystemCoreClock 变为48MHz
+
+使用“ pca\pca_16bit_pwm\source ”的例程生成800KHz的例程
+    修改点：
+        PcaInitStruct.pca_clksrc = PcaPclkdiv2;--PCLK的分频系数
+        PcaInitStruct.pca_ccap   = 15;// 5是80%；8是70%；9是67%；18是37%；19是33%；20是30%
+        PcaInitStruct.pca_carr   = 29; //正好是800KHz
+
+        PcaInitStruct.pca_clksrc = PcaPclkdiv32;
+        
+
+
+
+        
+        32%高电平是 0--400ns的高
+        68%高电平是 1--850ns的高
+        reset:50us以上。
+    先用PCA生成PWM，每次要量测占空比。后面可以考虑直接使用模拟的方式。
+    （这种时间更难操作）使用模拟的方式控制彩灯：https://www.itdaan.com/blog/2017/12/13/a96fcf5ce3937c60a9d208365d9f08d3.html  
+    需要使用操作寄存器的方式，不然速度慢：
+          端口 Px 输出值配置寄存器(PxOUT) (x = A,B,C,D,E,F)  ：
+            地址偏移量：0x108(PA),0x148(PB),0x188(PC),0x1C8(PD),0x1108(PE),0x1148(PF) 
+            0x1c8 PDOUT RW 端口 PD 输出值配置寄存器
+          华大是用地址操作的：
+            基地址加偏移地址：端口控制器寄存器描述中“  基地址 1：0x40020C00    ”
+          最终操作IO高低电平用：0x40020C00+0x1C8=0x40020DC8
+             *((volatile uint32_t *)(0x40020DC8)) |= 0x04;--高点评
+              *((volatile uint32_t *)(0x40020DC8)) &= 0xFB;-低电平
+              可以达到2.5MHz（使用官网例程，只能达到500Khz）
+PCA_CCON：
+需要先使能PCA计数器中断使能控制信号
+CCIE
+溢出中断：当PCA计数溢出时，CF由硬件置位，如果CMOD寄存器的CFIE位为1，则CF标志可以产生中断--计数器计数到与寄存器 CARR 的值相同时溢出后计数器的值变为 0
+匹配中断：当出现匹配或捕获时，该位由硬件置位，这个标志位会产生一个PCA中断
+启动PCA计数器计数
+
+
+void PCA_IRQHandler(void)
+
+切换占空比： Pca_IRQHandler 函数
+频率会跳，是因为没有设置周期指吗？还是要重新初始化一下pca
 
 

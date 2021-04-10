@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1502394241</fileChecksum>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\driver\src\ddl.c</file>
+            <file>$PROJ_DIR$\..\source\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\system_hc32l07x.c</file>
+            <file>$PROJ_DIR$\output\release\Obj\interrupts_hc32l07x.o</file>
+            <file>$PROJ_DIR$\output\release\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\startup_hc32l07x.s</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\sysctrl.h</file>
+            <file>$PROJ_DIR$\output\release\Exe\template.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\system_hc32l07x.o</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\interrupts_hc32l07x.c</file>
+            <file>$PROJ_DIR$\..\..\..\midware\src\WS2812.c</file>
+            <file>$PROJ_DIR$\output\release\Obj\sysctrl.o</file>
+            <file>$PROJ_DIR$\output\release\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$PROJ_DIR$\..\..\..\midware\src\global.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\base_types.h</file>
+            <file>$PROJ_DIR$\..\..\..\midware\src\systemclock.c</file>
+            <file>$PROJ_DIR$\output\release\Obj\ddl.o</file>
+            <file>$PROJ_DIR$\..\..\..\driver\src\sysctrl.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\system_hc32l07x.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\flash.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\xzy.pbd</file>
+            <file>$PROJ_DIR$\output\release\Obj\system_hc32l07x.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\interrupts_hc32l07x.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\ddl.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\interrupts_hc32l07x.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\hc32l07x.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\..\..\mcu\common\board_evbhc32lf07x.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\spi.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm0plus.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\gpio.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\reset.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\adt.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\uart.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\ddl.pbi</file>
+            <file>$PROJ_DIR$\output\release\Obj\sysctrl.pbi</file>
+            <file>$PROJ_DIR$\output\release\Obj\startup_hc32l07x.o</file>
+            <file>$PROJ_DIR$\..\source\ddl_device.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\midware\inc\global.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\WS2812.o</file>
+            <file>$PROJ_DIR$\output\release\Obj\global.o</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\dmac.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\hc32l07x.icf</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\pca.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\output\release\Obj\systemclock.o</file>
+            <file>$PROJ_DIR$\..\..\..\midware\inc\WS2812.h</file>
+            <file>$PROJ_DIR$\output\release\Obj\WS2812.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\output\release\Obj\systemclock.pbi</file>
+            <file>$PROJ_DIR$\output\release\Obj\global.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\midware\inc\systemclock.h</file>
+            <file>$PROJ_DIR$\..\..\..\driver\inc\lpm.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
+            <file>$PROJ_DIR$\output\release\List\template.map</file>
+            <file>$PROJ_DIR$\output\release\Obj\ddl.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\WS2812.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\system_hc32l07x.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\systemclock.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\sysctrl.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\global.__cstat.et</file>
+            <file>$PROJ_DIR$\output\release\Obj\interrupts_hc32l07x.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 8 70</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\driver\src\ddl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 7 31 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 5 9 34 52 26 18 7 39 17 29 35 32 36 23 31 50 22 51 15 30 40 43 41 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 7 31 50 46 42 56 24 59 68 45 38 44 67 62 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62 32 59 7 39 29 56 38 18 17 9 25 42 45 44 34 5 52 26 46 24 68 67 36 23 31 50 22 51 15 30 40 35 43 41 37 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\mcu\common\system_hc32l07x.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18 22 5 9 52 26 29 17 39 30 51 25 15 34 40 35 43 41 37 23 7 32 36 31 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39 29 17 9 25 7 23 5 52 26 18 34 22 51 15 30 40 35 43 41 37 32 36 31 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_hc32l07x.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\output\release\Exe\template.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 58 20 55 3 4 49 13 10 61 54 60 57 64 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\mcu\common\interrupts_hc32l07x.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 7 31 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 30 9 23 15 5 40 36 31 50 51 17 35 25 32 18 34 7 39 52 26 29 43 41 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\midware\src\WS2812.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 62 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 7 31 50 38 42 44 56 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 9 25 18 17 44 7 39 29 32 38 56 34 5 52 26 42 53 36 23 31 50 22 51 15 30 40 43 41 37 62 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\midware\src\global.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\midware\src\systemclock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 7 31 50 42 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 23 22 30 15 9 5 40 24 36 31 50 51 17 32 42 18 34 39 25 52 26 29 35 67 43 41 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\driver\src\sysctrl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 32 18 22 5 9 52 26 29 17 39 30 51 25 15 36 34 40 35 43 41 37 23 31 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 39 29 18 17 9 25 41 34 5 52 26 43 37 32 36 23 31 50 22 51 15 30 40 35</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>debug</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

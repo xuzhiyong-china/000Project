@@ -58,11 +58,22 @@ https://blog.csdn.net/u013062709/article/details/85217281
 http://bbs.eeworld.com.cn/thread-643895-1-1.html
 SPI 16bit数据为1个码
 
+https://www.itdaan.com/blog/2017/12/13/a96fcf5ce3937c60a9d208365d9f08d3.html  
+STM32的例程（使用延时的方式实现）
+
+WS2812的时序
+https://blog.csdn.net/EFM32/article/details/102942946
+
+
+WS2812在30hz的刷新频率下一个信号线能够控制至多500个led。（0.03秒）（因为时间短，关闭其他中断，全跑PWM即可）
+依次发送RGB数据
+32%高电平是 0
+68%高电平是 1
+reset:50us以上。
 
 
 
-
-
+SPI：还要配置SPI的复用功能为SPI，不同的SPIx不一样的脚。而且SPIx的位号也不一样
 
 
 

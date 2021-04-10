@@ -1,3 +1,6 @@
+华大的例程中有虚拟串口的，用它完成与上位机的通讯
+
+
 原来的方式是DCDC加排线成本      
     大于直接使用12P的XH红白线
 
@@ -24,3 +27,12 @@ https://china-ms.taobao.com/search.htm?search=y&keyword=%C5%C5%CF%DF&lowPrice=&h
 150w，99元    https://detail.tmall.com/item.htm?spm=a1z10.3-b-s.w4011-23472802678.150.4b803f86s91FH4&id=547672680626&rn=cb7908a1b7f30fb042adb2d8f6c1cc9a&abbucket=1
 
 
+
+
+
+华大的例程是PA06，改为PB04：
+    Gpio_Init(GpioPortB, GpioPin4, &GpioInitStruct);
+    Gpio_SetAfMode(GpioPortB, GpioPin4, GpioAf2);
+    
+
+    
